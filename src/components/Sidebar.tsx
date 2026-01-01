@@ -7,6 +7,7 @@ import {
   MapPin,
   Phone,
   Send,
+  Download,
 } from "lucide-react";
 
 function Sidebar() {
@@ -29,6 +30,16 @@ function Sidebar() {
           </h1>
           <p className="title">Web developer</p>
         </div>
+
+        <a
+          href="/assets/CV-Des-30.pdf"
+          className="form-btn h-10 transition-all duration-300"
+          download
+          aria-label="Download resume"
+        >
+          <Download size={16} aria-hidden="true" focusable={false} />
+          <span>Download Resume</span>
+        </a>
 
         <button
           className="info_more-btn"
