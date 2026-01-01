@@ -1,11 +1,11 @@
 export default function IcIonic() {
   return (
-    <div className="flex items-center justify-center rounded-lg bg-black/5 p-2 text-black dark:bg-white/5 dark:text-white">
+    <div className="flex items-center justify-center rounded-lg bg-black/5 p-1 text-black lg:p-2 dark:bg-white/5 dark:text-white">
       <svg
         viewBox="-6.22132441 -.0693837 441.74132441 153.01306075"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
-        className="size-4"
+        className="size-3 lg:size-4"
         role="img"
       >
         <g fill="currentColor">

@@ -1,13 +1,13 @@
 export default function IcNode() {
   return (
     <div
-      className="flex items-center justify-center rounded-lg bg-black/5 p-2 text-black dark:bg-white/5 dark:text-white"
+      className="flex items-center justify-center rounded-lg bg-black/5 p-1 text-black lg:p-2 dark:bg-white/5 dark:text-white"
       style={{ backgroundColor: "#539E4330" }}
     >
       <svg
         viewBox="0 0 512 512"
         xmlns="http://www.w3.org/2000/svg"
-        className="size-4"
+        className="size-3 lg:size-4"
         fill="none"
       >
         <g id="Type=Default_node">

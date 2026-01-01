@@ -1,14 +1,14 @@
 export default function IcMongo() {
   return (
     <div
-      className="flex items-center justify-center rounded-lg p-2 text-black dark:text-white"
+      className="flex items-center justify-center rounded-lg p-1 text-black lg:p-2 dark:text-white"
       style={{ backgroundColor: "#47A24830" }}
     >
       <svg
         viewBox="0 0 142 143"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="size-4"
+        className="size-3 lg:size-4"
       >
         <g clip-path="url(#clip0_118_25)">
           <path

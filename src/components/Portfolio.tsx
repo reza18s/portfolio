@@ -28,7 +28,7 @@ function Portfolio() {
                     <Eye size={16} aria-hidden="true" focusable={false} />
                   </div>
                   <img
-                    className="h-40"
+                    className="lg:h-40"
                     src={p.image}
                     alt={p.title}
                     loading="lazy"
@@ -38,6 +38,16 @@ function Portfolio() {
                 <p className="project-category">
                   {p.category.charAt(0).toUpperCase() + p.category.slice(1)}
                 </p>
+                <div className="mt-2 ml-2 flex flex-wrap gap-1">
+                  {p.Technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="service-item flex h-fit w-fit items-center rounded-md py-1 pr-2 pl-1 text-xs"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </li>
           ))}

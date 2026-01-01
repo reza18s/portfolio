@@ -19,17 +19,20 @@ function ProjectPage() {
         className="mb-4 w-full rounded-lg border"
       />
       <div className="flex flex-col items-start">
-        <h2 className="h3 mb-2 text-3xl">Project Overview</h2>
-        <p className="mb-4">{project.description}</p>
+        <h2 className="h3 mb-2 text-xl lg:text-3xl">Project Overview</h2>
+        <p className="mb-4 text-sm lg:text-base">{project.description}</p>
         <div className="mb-4">
-          <span className="text-xl font-semibold">Category:</span>{" "}
+          <span className="text-base font-semibold lg:text-xl">Category:</span>{" "}
           {project.category}
         </div>
-        <div className="mb-4">
-          <span className="text-xl font-semibold">Role:</span> {project.role}
+        <div className="mb-4 text-sm lg:text-base">
+          <span className="text-base font-semibold lg:text-xl">Role:</span>{" "}
+          {project.role}
         </div>
-        <div className="mb-4">
-          <span className="text-xl font-semibold">Technologies:</span>
+        <div className="mb-4 text-sm lg:text-base">
+          <span className="text-base font-semibold lg:text-xl">
+            Technologies:
+          </span>
           <ul className="ml-6 list-disc">
             {project.Technologies.map((tech) => (
               <li key={tech}>{tech}</li>
@@ -37,8 +40,10 @@ function ProjectPage() {
           </ul>
         </div>
         <div className="mb-4">
-          <span className="text-xl font-semibold">Key Features:</span>
-          <ul className="ml-6 list-disc">
+          <span className="text-base font-semibold lg:text-xl">
+            Key Features:
+          </span>
+          <ul className="ml-6 list-disc text-sm lg:text-base">
             {project.KeyFeatures.map((feature, i) => (
               <li key={i}>- {feature}</li>
             ))}

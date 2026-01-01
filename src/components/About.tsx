@@ -59,12 +59,14 @@ function About() {
           ].map((tech) => (
             <li
               key={tech.label}
-              className="service-item flex h-fit w-fit items-center gap-4 rounded-lg py-2 pr-4 pl-3"
+              className="service-item flex h-fit w-fit items-center gap-2 rounded-lg py-1 pr-2 pl-1 lg:gap-4 lg:py-2 lg:pr-4 lg:pl-3"
             >
               <div className="rounded-md" aria-hidden="true">
                 {tech.icon}
               </div>
-              <p className="service-item-text text-lg">{tech.label}</p>
+              <p className="service-item-text text-xs md:text-base lg:text-lg">
+                {tech.label}
+              </p>
             </li>
           ))}
         </ul>
@@ -72,7 +74,7 @@ function About() {
       <section className="service">
         <h3 className="h3 service-title">What i'm doing</h3>
         <ul className="service-list">
-          <li className="service-item p-5">
+          <li className="service-item flex flex-col gap-2 p-5">
             <div className="service-icon-box">
               <img
                 src="/assets/images/icon-dev.svg"
@@ -80,15 +82,17 @@ function About() {
                 width={40}
               />
             </div>
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Web development</h4>
-              <p className="service-item-text">
+            <div className="service-content-box flex flex-col gap-2">
+              <h4 className="h4 service-item-title text-center">
+                Web development
+              </h4>
+              <p className="service-item-text text-center">
                 High-quality development of sites at the professional level with
                 react / Next.js for the frontend and node.js for the backend.
               </p>
             </div>
           </li>
-          <li className="service-item p-5">
+          <li className="service-item flex flex-col gap-2 p-5">
             <div className="service-icon-box">
               <img
                 src="/assets/images/icon-app.svg"
@@ -96,9 +100,9 @@ function About() {
                 width={40}
               />
             </div>
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Mobile apps</h4>
-              <p className="service-item-text">
+            <div className="service-content-box flex flex-col gap-2">
+              <h4 className="h4 service-item-title text-center">Mobile apps</h4>
+              <p className="service-item-text text-center">
                 Professional development of applications for Android using React
                 Native / Ionic.
               </p>

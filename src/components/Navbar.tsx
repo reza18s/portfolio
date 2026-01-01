@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const items = ["about", "portfolio", "contact"];
+
   return (
     <nav className="navbar">
       <ul className="navbar-list">
