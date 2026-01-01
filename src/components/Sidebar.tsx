@@ -28,18 +28,25 @@ function Sidebar() {
           <h1 className="name" title="Reza Saeidavi">
             Reza Saeidavi
           </h1>
-          <p className="title">Web developer</p>
+          <div className="flex items-start justify-start gap-2 sm:flex-col">
+            <p className="title h-6">Web developer</p>
+            <a
+              href="/assets/CV-Des-30.pdf"
+              className="form-btn ml-0 h-6 w-fit rounded-lg text-[10px] transition-all duration-300 md:text-xs lg:h-10 lg:text-base"
+              download
+              aria-label="Download resume"
+            >
+              <Download
+                className="size-3 lg:size-4"
+                aria-hidden="true"
+                focusable={false}
+              />
+              <span className="flex gap-1">
+                <span className="hidden md:flex">Download </span> Resume
+              </span>
+            </a>
+          </div>
         </div>
-
-        <a
-          href="/assets/CV-Des-30.pdf"
-          className="form-btn h-10 transition-all duration-300"
-          download
-          aria-label="Download resume"
-        >
-          <Download size={16} aria-hidden="true" focusable={false} />
-          <span>Download Resume</span>
-        </a>
 
         <button
           className="info_more-btn"
